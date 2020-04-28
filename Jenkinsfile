@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@Justin-dev') _
+@Library('jenkins-shared-library') _
 
 pipeline {
     agent any
@@ -26,7 +26,7 @@ pipeline {
         stage('Orch Publish') {
             steps {
                 script {
-                    orchPublish("OPQ") 
+                    orchPublish("VerticalApps", 1) 
                 }
             }
         }
