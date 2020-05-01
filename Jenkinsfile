@@ -16,14 +16,7 @@ pipeline {
                 sonarQubeScan()
             }
         }
-        stage('Build') {
-            steps {
-                script {
-                    pack() 
-                }
-            }
-        }
-        stage('Orch Publish') {
+        stage('Pack and Publish') {
             steps {
                 script {
                     orchPublish("VerticalApps", 1) 
