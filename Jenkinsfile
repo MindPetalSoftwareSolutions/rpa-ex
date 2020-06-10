@@ -19,7 +19,7 @@ pipeline {
         stage('Pack and Publish') {
             steps {
                 script {
-                    orchPublish("VerticalApps", 11, 9) 
+                    orchPublish("VerticalApps", 2, 1) 
                 }
             }
         }
