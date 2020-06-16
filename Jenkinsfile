@@ -19,7 +19,7 @@ pipeline {
         stage('Pack and Publish') {
             steps {
                 script {
-                    orchPublish("Default", 6, 1) 
+                    orchPublish("Default", "PAER", 1) 
                 }
             }
         }
