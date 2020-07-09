@@ -1,6 +1,8 @@
 # rpa-ex
 Example git repository
 
+# Step 1: Add Jenkinsfile to your GitHub Repository
+
 ## Jenkinsfile breakdown
 
 ### Library tag which specifies which library in Jenkins to use. Do not change
@@ -45,6 +47,8 @@ pipeline {
     }
 }
 ```
+
+# Step 2: Configure Jenkins to execute builds
 
 ## Jenkins configuration
 
