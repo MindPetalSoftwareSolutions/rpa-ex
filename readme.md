@@ -53,3 +53,5 @@ pipeline {
 
 ### Job Detials
 ![Job Details](https://github.com/VerticalApps-DevOps/rpa-resources/blob/master/job_details.png)
+
+Now you are ready to execute your builds!
