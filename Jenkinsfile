@@ -2,9 +2,8 @@
 
 pipeline {
     agent any
-    /*
     stages {
-        stage('Sonar') {
+        /*stage('Sonar') {
             steps {
                 sonarQubeScan()
             }
