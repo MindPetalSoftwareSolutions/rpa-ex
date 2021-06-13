@@ -16,9 +16,9 @@ pipeline {
             }
         }
     }
-    post {
+   /* post {
         always {
             postBuild()
         }
-    }
+    }*/
 }
