@@ -3,11 +3,11 @@
 pipeline {
     agent any
     stages {
-        stage('Sonar') {
+       /* stage('Sonar') {
             steps {
                 sonarQubeScan()
             }
-        }
+        }*/
         stage('Pack and Publish') {
             steps {
                 script {
