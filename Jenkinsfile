@@ -15,10 +15,10 @@ pipeline {
                 }
             }
         }
-        stage('Post-Build') {
-            steps {
-                postBuild()
-            }
+    }
+   post {
+        always {
+            postBuild()
         }
     }
 }

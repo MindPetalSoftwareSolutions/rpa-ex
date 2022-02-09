@@ -36,13 +36,13 @@ pipeline {
                 }
             }
         }
+    }
 ```
 ### Pipeline stage: Post-Buid: Cleans up Jenkins working directory. Do not change.
 ```
-        stage('Post-Build') {
-            steps {
-                postBuild()
-            }
+    post {
+        always {
+            postBuild()
         }
     }
 }
