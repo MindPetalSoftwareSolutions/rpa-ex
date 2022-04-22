@@ -1,24 +1,12 @@
-@Library('jenkins-modern-folder-shared-library@Justin-dev') _
+@Library('jenkins-modern-folder-shared-library@sbom') _
 
 pipeline {
     agent any
     stages {
         stage('Sonar') {
             steps {
-                sonarQubeScan()
+                generateSBoM()
             }
-        }
-        stage('Pack and Publish') {
-            steps {
-                script {
-                  orchPublish("Default", "PAER") 
-                }
-            }
-        }
-    }
-   post {
-        always {
-            postBuild()
         }
     }
 }
