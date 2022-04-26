@@ -3,7 +3,7 @@
 pipeline {
     agent any
     stages {
-        stage('Sonar') {
+        stage('SBoM') {
             steps {
                 generateSBoM()
             }
